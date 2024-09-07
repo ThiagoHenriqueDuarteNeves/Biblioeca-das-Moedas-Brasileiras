@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>A Biblioteca das Moedas</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>A Biblioteca das Moedas</h1>
+    </header>
+
+    <main>
+        <section>
+            <!-- Adicionei o id="pesquisa" no input -->
+            <input type="text" id="pesquisa" name="search" placeholder="Digite sua pesquisa">
+            <!-- Adicionei o id="btnPesquisar" no botão -->
+            <button id="btnPesquisar">Pesquisar</button>
+            <p id="mensagemResultado" style="display: none;">Nenhum resultado encontrado.</p>
+        </section>
+
+        <!-- Container onde as moedas serão exibidas -->
+        <div class="resultados-pesquisa"></div>
+    </main>
+
+    <footer id="footer">
+        <p>2024</p>
+        <p>Fale Conosco</p>
+    </footer>
+
+    <!-- Incluindo o arquivo dados.js -->
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+/* Reset básico para margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0 1em;
+}
+
+header {
+    text-align: center;
+    padding: 1em 0;
+    background: #f4f4f4;
+    border-bottom: 2px solid #ccc;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    margin: 2em 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+#pesquisa {
+    padding: 0.5em;
+    font-size: 1em;
+    margin-bottom: 1em; /* Adiciona um espaço abaixo do campo de input */
+}
+
+#btnPesquisar {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#btnPesquisar:hover {
+    background-color: #004494;
+}
+
+.resultados-pesquisa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.resultados-pesquisa > div {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    width: 300px;
+    text-align: center;
+}
+
+.resultados-pesquisa img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5em 5em 3em 5em;
+    width: calc(100% + 2em);
+    margin: 0 0 3em -2em;
+    background: #f4f4f4;
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
+
+footer > * {
+    width: calc(50% - 2em);
+    margin-left: 2em;
+}
+
+footer .copyright {
+    width: 100%;
+    margin: 2.5em 0 2em 0;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 1280px) {
+    footer {
+        padding: 4em 4em 2em 4em;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    footer {
+        padding: 4em 3em 2em 3em;
+        display: block;
+        margin: 0 0 3em 0;
+        width: 100%;
+    }
+
+    footer > * {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 3em;
+    }
+
+    footer .copyright {
+        text-align: left;
+    }
+}
